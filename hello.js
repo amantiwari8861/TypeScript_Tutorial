@@ -6,10 +6,8 @@ console.log(typeof(num2));
  */
 //tsc hello.ts
 //node hello.js 
-
 // var name2:string="Aspire";
 // console.log(name2);
-
 // enum Direction { EAST, WEST = 4, NORTH, SOUTH, } class DirectionEnum {
 //     show() {
 //         var x: number = Direction.EAST;
@@ -18,9 +16,9 @@ console.log(typeof(num2));
 //         console.log("East=" + x + ", South =" + y);
 //     }
 // } let obj = new DirectionEnum(); obj.show(); 
-
-function add(a: number, b: number=13) {
-    var result= a + b;
-    console.log("sum :",result);
+function add(a, b) {
+    if (b === void 0) { b = 13; }
+    var result = a + b;
+    console.log("sum :", result);
 }
 add(2);
