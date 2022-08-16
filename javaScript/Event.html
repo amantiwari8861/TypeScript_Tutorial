@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="DeferDemo.js" ></script>
+    <!-- <script src="DeferDemo.js" defer="true"></script> -->
+    <script>
+        alert("i am in head");
+    </script>
+</head>
+
+<body>
+    <script>
+        alert("i am in body");
+    </script>
+    <button id="btn">Click me</button>
+
+</body>
+<script>
+    alert("i am after body");
+</script>
+
+</html>
