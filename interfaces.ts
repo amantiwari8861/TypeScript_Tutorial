@@ -10,9 +10,13 @@ function getProductDetails(productobj: Product): string {
 }
 
 // declaring a variable having interface properties
-const prodObject = {productId: 1001, productName: 'Mobile'};
+// const prodObject = {productId: 1001, productName: 'Mobile'};
 
 // declaring variable and invoking Product details function
+// const productDetails: string = getProductDetails(prodObject);
+
+
+let prodObject={productId: 1001, productName:'Mobile', productPrice:10000};
 const productDetails: string = getProductDetails(prodObject);
 
 // line to populate the created product on console
